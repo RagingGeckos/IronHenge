@@ -1,0 +1,99 @@
+﻿body {
+    padding-bottom: 20px;
+    background-image: url('../images/up.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation: animatedBackground 120s linear infinite;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #272b30;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height: 200px;
+}
+
+/*.carousel ol.carousel-indicators li {
+    border-color: firebrick;
+}
+
+    .carousel ol.carousel-indicators li.active {
+        border-color: firebrick;
+        background-color: firebrick;
+    }*/
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'Tobago Poster';
+    src: url('../fonts/Tobago Poster.ttf') format('truetype');
+}
+
+.TobagoPoster {
+    font-family: 'Tobago Poster';
+}
+
+.btn-danger {
+    background-image: linear-gradient(rgb(236, 77, 73), rgb(236, 77, 73), 60%, firebrick);
+    color: lavender;
+    font-family: 'Tobago Poster';
+}
+
+.carousel {
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    border-color: black !important;
+    border: 2px solid;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
